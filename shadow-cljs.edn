@@ -1,0 +1,5 @@
+{:lein   {:profile "+dev"}
+ ; :source-paths and :dependencies are now ignored in this file
+ ; configure them via project.clj
+ :builds {}
+ }
