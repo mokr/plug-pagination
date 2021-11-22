@@ -160,8 +160,8 @@
       {:on-click #(rf/dispatch [::set-page id prev-page]) :class (when at-first? "disabled")}
       [icon "navigate_before" :tooltip "Previous page"]]
      [:div.level-item
-      {:class "disabled"}
-      [:span (str current-page "/" page-count)]]
+      [:span {:title (str "Page " current-page " of " page-count)}
+       (str current-page "/" page-count)]]
      [:div.level-item
       {:on-click #(rf/dispatch [::set-page id next-page]) :class (when at-last? "disabled")}
       [icon "navigate_next" :tooltip "Next page"]]
